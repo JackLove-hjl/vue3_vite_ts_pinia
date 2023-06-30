@@ -6,13 +6,16 @@
 // import myToRef from '../../components/myToRef.vue'
 // import myComputed from '../../components/myComputed.vue'
 // import myWatch from '../../components/myWatch.vue'
-import myWatchEffect from '../../components/myWatchEffect.vue'
+// import myWatchEffect from '../../components/myWatchEffect.vue'
+import Layout from '../../components/Layout/index.vue'
 </script>
 
 <template>
-  <my-watch-effect />
+  <Layout />
 </template>
 
-<style scoped>
-
+<style lang="scss">
+#app {
+  @include bfc;
+}
 </style>

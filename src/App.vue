@@ -4,8 +4,22 @@ import { RouterView } from 'vue-router'
 
 <template>
   <RouterView />
+
+<!--  <div class="el-test">-->
+<!--    jacklove-->
+<!--    <div class="el-test__inner">el</div>-->
+<!--    <div class="el-test&#45;&#45;success">test</div>-->
+<!--  </div>-->
 </template>
 
-<style scoped>
-
+<style scoped lang="scss">
+@include b(test) {
+  color: red;
+  @include e(inner) {
+    color: blue;
+  }
+  @include m(success) {
+    color: green;
+  }
+}
 </style>
