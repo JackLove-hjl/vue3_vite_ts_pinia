@@ -17,6 +17,11 @@ const router = createRouter({
             name: 'Home',
             component: () => import('../views/home/home.vue')
         },
+        {
+            path: '/waterFall',
+            name: 'waterFall',
+            component: () => import('../views/waterFall/waterFall.vue')
+        },
     ]
 })
 

@@ -18,8 +18,8 @@ app.use(router)
 import ElementPlus from 'element-plus'
 app.use(ElementPlus)
 
-import webgl3d_mc from "@supermap/iclient3d-vue-for-webgl"
-app.use(webgl3d_mc)
+import TreeItem from './components/Tree/TreeItem.vue'
+app.component('tree',TreeItem)
 
 
 app.mount('#app')
