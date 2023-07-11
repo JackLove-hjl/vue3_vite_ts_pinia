@@ -21,5 +21,14 @@ app.use(ElementPlus)
 import TreeItem from './components/Tree/TreeItem.vue'
 app.component('tree',TreeItem)
 
+import mitt from 'mitt'
+const Mit = mitt()
+declare module 'vue' {
+    export interface ComponentCustomProperties {
+        $Bus: typeof Mit
+    }
+}
+app.config.globalProperties.$Bus = Mit
+
 
 app.mount('#app')

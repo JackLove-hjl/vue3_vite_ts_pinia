@@ -10,7 +10,11 @@
 // import Layout from '../../components/Layout/index.vue'
 // import myChild from '../../components/myChild.vue'
 // import tree from '../../components/Tree/Tree.vue'
-import myComp from '../../components/dymicComp/index.vue'
+// import myComp from '../../components/dymicComp/index.vue'
+// import Dialog from '../../components/Slot/index.vue'
+// import myTransition from '../../components/transition/index.vue'
+// import myMitt from '../../components/Mitt/index.vue'
+import myTsx from '../../components/myTsx.vue'
 import {onMounted, ref} from "vue";
 
 // const name = ref('jack')
@@ -29,7 +33,11 @@ import {onMounted, ref} from "vue";
 
 <template>
 <!--  <my-child ref="child" :name="name" :arr="[1,2,3]" @on-click="getName"/>-->
-  <my-comp />
+<!--  <my-comp />-->
+<!--  <Dialog />-->
+<!--  <my-transition></my-transition>-->
+<!--  <my-mitt></my-mitt>-->
+  <my-tsx></my-tsx>
 </template>
 
 <style lang="scss">
